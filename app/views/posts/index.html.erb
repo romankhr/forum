@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
-
+<% if current_user %>
+  <%= image_tag current_user.avatar.url %>
+<% end %>
 <h1>Listing Posts</h1>
 
 <table>
